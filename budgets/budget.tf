@@ -5,8 +5,9 @@ resource "aws_budgets_budget" "monthly" {
   limit_unit        = "USD"
   time_unit         = "MONTHLY"
 
-  cost_filters = {
-    TagKeyValue = "Environment$dev"
+  cost_filter {
+    name   = "TagKeyValue"
+    values = ["Environment$dev"]
   }
 
   notification {
