@@ -23,4 +23,5 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - uses: opentofu/setup-opentofu@v1
       - run: tofu fmt -check
+      - run: tofu init
       - run: tofu validate
