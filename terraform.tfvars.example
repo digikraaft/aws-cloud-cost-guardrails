@@ -1,0 +1,15 @@
+# AWS Region
+aws_region = "us-east-1"
+
+# Email for Budget and Billing alerts
+alert_email = "your-email@example.com"
+
+# Slack Integration (Optional)
+# Create a webhook at https://api.slack.com/messaging/webhooks
+slack_webhook_url = "https://hooks.slack.com/services/T000.../B000.../XXXX..."
+
+# Environment tagging
+environment = "dev"
+
+# Monthly Budget Limit
+monthly_budget_limit = 50
